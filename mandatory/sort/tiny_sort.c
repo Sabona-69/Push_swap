@@ -6,7 +6,7 @@
 /*   By: hel-omra <hel-omra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 01:59:10 by hel-omra          #+#    #+#             */
-/*   Updated: 2024/02/20 23:42:04 by hel-omra         ###   ########.fr       */
+/*   Updated: 2024/02/22 05:41:12 by hel-omra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	is_sorted(t_stack *a)
 {
 	t_stack	*tmp;
 
+	if (!a)
+		return (1);
 	tmp = a;
 	while (tmp->next && tmp->content < tmp->next->content)
 		tmp = tmp->next;

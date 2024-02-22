@@ -6,7 +6,7 @@
 /*   By: hel-omra <hel-omra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 01:47:31 by hel-omra          #+#    #+#             */
-/*   Updated: 2024/02/22 02:06:38 by hel-omra         ###   ########.fr       */
+/*   Updated: 2024/02/22 05:42:05 by hel-omra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	pa(t_stack **a, t_stack **b)
 {
 	t_stack	*tmp;
 
+	tmp = NULL;
 	if (!(*b))
 		return ;
 	tmp = *b;

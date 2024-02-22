@@ -6,7 +6,7 @@
 /*   By: hel-omra <hel-omra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 15:36:44 by hel-omra          #+#    #+#             */
-/*   Updated: 2024/02/22 00:58:45 by hel-omra         ###   ########.fr       */
+/*   Updated: 2024/02/22 05:24:19 by hel-omra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_stack **lst, t_stack *new)
 {
+	if (!lst && new)
+		*lst = new;
 	if (lst && new)
 	{
 		new->next = *lst;

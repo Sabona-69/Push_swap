@@ -6,7 +6,7 @@
 /*   By: hel-omra <hel-omra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 22:55:09 by hel-omra          #+#    #+#             */
-/*   Updated: 2024/02/22 04:33:36 by hel-omra         ###   ########.fr       */
+/*   Updated: 2024/02/22 05:55:38 by hel-omra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ char	**ft_split(char *s)
 	k = 0;
 	i = 0;
 	j = 0;
-	new = malloc (ft_count_words(s) * sizeof(char *) + 1);
+	new = malloc ((ft_count_words(s) + 1) * sizeof(char *));
 	if (!new)
 		return (NULL);
 	while (k < ft_count_words(s))
@@ -137,4 +137,3 @@ char	*ft_strjoin(char *s, char *buffer)
 	free(s);
 	return (string);
 }
-

@@ -6,11 +6,22 @@
 /*   By: hel-omra <hel-omra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 18:33:19 by hel-omra          #+#    #+#             */
-/*   Updated: 2024/02/22 04:10:08 by hel-omra         ###   ########.fr       */
+/*   Updated: 2024/02/22 05:58:52 by hel-omra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/checker.h"
+
+void	ft_result(t_stack **a, t_stack **b)
+{
+	if (is_sorted(*a) == 0 && lst_size(b) == 0)
+		write (1, "OK\n", 3);
+	else
+		write(1, "KO\n", 3);
+	if (lst_size(b) != 0)
+		lst_clear (b);
+	lst_clear (a);
+}
 
 int	main(int ac, char *av[])
 {
@@ -38,11 +49,5 @@ int	main(int ac, char *av[])
 		do_operations(&a, &b, instractions);
 		free(instractions);
 	}
-	if (is_sorted(a) == 0)
-		write (1, "OK\n", 3);
-	else
-		write(1, "KO\n", 3);
-		lst_clear (&a);
-		lst_clear (&b);
+	ft_result(&a, &b);
 }
-

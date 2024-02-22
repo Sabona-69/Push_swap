@@ -100,7 +100,7 @@ char	**ft_split(char *s)
 	k = 0;
 	i = 0;
 	j = 0;
-	new = malloc ((ft_count_words(s) + 1 ) * sizeof(char *));
+	new = malloc ((ft_count_words(s) + 1) * sizeof(char *));
 	if (!new)
 		return (NULL);
 	while (k < ft_count_words(s))

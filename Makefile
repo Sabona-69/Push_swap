@@ -6,7 +6,7 @@
 #    By: hel-omra <hel-omra@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/06 09:28:50 by hel-omra          #+#    #+#              #
-#    Updated: 2024/02/22 04:56:28 by hel-omra         ###   ########.fr        #
+#    Updated: 2024/02/22 05:57:20 by hel-omra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,7 @@ NAME	= 	push_swap
 
 B_NAME	= 	checker
 
-Flags	= 	-Wall -Wextra -Werror 
-
+Flags	= 	-Wall -Wextra -Werror
 FILES	=	mandatory/sort/sorting.c mandatory/sort/tiny_sort.c \
 			mandatory/utils/handle_errors.c mandatory/utils/parse.c mandatory/utils/stack_fill.c mandatory/utils/utils.c mandatory/utils/utils2.c \
 			mandatory/operations/operations_1.c mandatory/operations/operations_2.c mandatory/operations/operations_3.c \

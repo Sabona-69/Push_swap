@@ -6,7 +6,7 @@
 /*   By: hel-omra <hel-omra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 01:14:51 by hel-omra          #+#    #+#             */
-/*   Updated: 2024/02/22 04:37:45 by hel-omra         ###   ########.fr       */
+/*   Updated: 2024/02/22 05:42:20 by hel-omra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	is_sorted(t_stack *a)
 {
 	t_stack	*tmp;
 
+	if (!a)
+		return (1);
 	tmp = a;
 	while (tmp->next && tmp->content < tmp->next->content)
 		tmp = tmp->next;
@@ -49,7 +51,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 void	do_operations(t_stack **a, t_stack **b, char *instractions)
 {
-	
 	if (ft_strncmp(instractions, "pa\n", 3) == 0)
 		pa(a, b);
 	else if (ft_strncmp(instractions, "pb\n", 3) == 0)
